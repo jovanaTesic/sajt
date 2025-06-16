@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Početna stranica</title>
+  <link rel="stylesheet" href="uredi.css" />
+  <link rel="icon" href="favicon3.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex"> 
+      <div class="logo-container"> 
+          <img src="favicon3.png" alt="PetVet logo" class="logo" />
+      </div> 
+         <h1>Veterinarska ordinacija "PetVet"</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Početna</a></li>
+          <li><a href="usluge.html">Usluge</a></li>
+          <li><a href="zakazivanje.html">Zakazivanje</a></li>
+          <li><a href="oNama.html">O nama</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+  <div class="hero-overlay">
+    <h2>Brinemo o zdravlju vaših ljubimaca</h2>
+    <p>
+      Stručna i ljubazna veterinarska nega za pse, mačke i ostale životinje.
+      Posetite nas i uverite se u kvalitet naših usluga.
+    </p>
+    <div class="hero-buttons">
+        <a href="zakazivanje.html" class="btn-primary">Zakažite pregled</a>
+       <a href="oNama.html" class="btn-primary">O nama</a>
+    </div> 
+  </div>
+</section>
+
+    <section class="about">
+      <div class="container">
+        <h3>Zašto odabrati nas?</h3>
+      <p>
+        Veterinarska ordinacija "PetVet" postoji već više od 20 godina. Naš tim stručnjaka koristi savremene metode lečenja
+        i pruža ljubaznu i personalizovanu negu za vaše ljubimce. Ponosni smo na povratne informacije zadovoljnih korisnika.
+      </p>
+      </div> 
+    </section>
+
+    <section class="carousel-section container">
+      <h3>Naši prostori i tim</h3>
+      <div class="carousel">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="carousel-track">
+          <div class="carousel-item"><img src="galerija1/ordinacija1.jpg" alt="VetOrdinacija 1"></div>
+          <div class="carousel-item"><img src="galerija1/ordinacija2.jpg" alt="VetOrdinacija 2"></div>
+          <div class="carousel-item"><img src="galerija1/download.webp" alt="VetOrdinacija 3"></div>
+          <div class="carousel-item"><img src="galerija1/ordinacija4.jpg" alt="VetOrdinacija 4"></div>
+          <div class="carousel-item"><img src="galerija1/ordinacija5.jpg" alt="VetOrdinacija 5"></div>
+          <div class="carousel-item"><img src="galerija1/ordinacija6.jpg" alt="VetOrdinacija 6"></div>
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+  </main>
+
+   <footer>
+  <div class="container footer-main">
+    <div class="contact">
+      <h4>Kontakt</h4>
+      <p>Telefon: +381 11 123 4567</p>
+      <p>Email: <a href="mailto:info@veterinar.rs">info@veterinar.rs</a></p>
+    </div>
+    <div class="vreme">
+      <h4>Radno vreme</h4>
+      <p>Ponedeljak - Petak: 07:00 - 21:00</p>
+      <p>Subota: 08:00 - 20:00</p>
+      <p>Nedelja: 08:00 - 18:00</p>
+    </div>
+    <div class="location">
+      <h4>Lokacija</h4>
+      <p>Ulica Miloša Obilića 134</p>
+      <p>32000 Čačak, Srbija</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Veterinarska Ordinacija "PetVet"
+  </div>
+</footer>
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+
+    let currentIndex = 0;
+    const itemsPerSlide = window.innerWidth < 768 ? 1 : 3;
+
+    function updateCarousel() {
+      const itemWidth = items[0].offsetWidth;
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < items.length - itemsPerSlide) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      updateCarousel();
+    });
+
+    window.addEventListener('load', updateCarousel);
+  </script>
+</body>
+</html>

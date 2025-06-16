@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usluge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="uredi.css" />
+  <link rel="icon" href="favicon3.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <div class="container header-flex"> 
+      <div class="logo-container"> 
+          <img src="favicon3.png" alt="PetVet logo" class="logo" />
+      </div> 
+         <h1>Veterinarska ordinacija "PetVet"</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" >Početna</a></li>
+          <li><a href="#" class="active">Usluge</a></li>
+          <li><a href="zakazivanje.html">Zakazivanje</a></li>
+          <li><a href="oNama.html">O nama</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="text-center my-5">Naše usluge</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/usluga1.jpg" class="card-img-top" alt="Pregled i dijagnostika" />
+          <div class="card-body">
+            <h5 class="card-title">Pregled i dijagnostika</h5>
+            <p class="card-text">
+              Stručni pregled vašeg ljubimca sa najmodernijom opremom. Postavljanje precizne dijagnoze uz savetovanje.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: 2000 RSD
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/usluga2.jpg" class="card-img-top" alt="Vakcinacija" />
+          <div class="card-body">
+            <h5 class="card-title">Vakcinacija</h5>
+            <p class="card-text">
+              Vakcinisanje protiv svih uobičajenih bolesti, uz stručan savet o prevenciji.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: 1500 RSD
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/usluga3.jpg" class="card-img-top" alt="Hirurški zahvati" />
+          <div class="card-body">
+            <h5 class="card-title">Hirurški zahvati</h5>
+            <p class="card-text">
+              Bezbedni i efikasni hirurški zahvati sa maksimalnom pažnjom i brigom za ljubimca.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: od 5000 RSD
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/uslugaS.jpg" class="card-img-top" alt="Stomatološka nega" />
+          <div class="card-body">
+            <h5 class="card-title">Stomatološka nega</h5>
+            <p class="card-text">
+              Redovna stomatološka kontrola i tretmani za zdrav osmeh vašeg ljubimca.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: 2500 RSD
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/usluga5.jpg" class="card-img-top" alt="Hitna pomoć" />
+          <div class="card-body">
+            <h5 class="card-title">Hitna pomoć</h5>
+            <p class="card-text">
+              Brza i efikasna pomoć u svim urgentnim slučajevima dostupna 24/7.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: po dogovoru
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="galerija1/usluga6.webp" class="card-img-top" alt="Saveti i konsultacije" />
+          <div class="card-body">
+            <h5 class="card-title">Saveti i konsultacije</h5>
+            <p class="card-text">
+              Individualni pristup i saveti za pravilnu negu i ishranu vašeg ljubimca.
+            </p>
+          </div>
+          <div class="card-footer">
+            Cena: besplatno
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container my-5">
+  <h2 class="text-center mb-4" style="color: #5ab0f5;">Najčešća pitanja</h2>
+
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Da li mogu zakazati pregled putem sajta?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Da, možete lako zakazati pregled popunjavanjem forme na stranici "Zakazivanje". Dobićete potvrdu nakon slanja.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Koje vrste životinja pregledate?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Uglavnom pregledamo pse i mačke, ali pregledamo i ptice, glodare i ostale vrste životinja.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          Da li radite hitne intervencije?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Da, imamo mogućnost hitnih intervencija u toku radnog vremena, a van toga možete nas kontaktirati telefonom.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <div class="container footer-main">
+    <div class="contact">
+      <h4>Kontakt</h4>
+      <p>Telefon: +381 11 123 4567</p>
+      <p>Email: <a href="mailto:info@veterinar.rs">info@veterinar.rs</a></p>
+    </div>
+    <div class="vreme">
+      <h4>Radno vreme</h4>
+      <p>Ponedeljak - Petak: 07:00 - 21:00</p>
+      <p>Subota: 08:00 - 20:00</p>
+      <p>Nedelja: 08:00 - 18:00</p>
+    </div>
+    <div class="location">
+      <h4>Lokacija</h4>
+      <p>Ulica Miloša Obilića 134</p>
+      <p>32000 Čačak, Srbija</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Veterinarska Ordinacija "PetVet"
+  </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
